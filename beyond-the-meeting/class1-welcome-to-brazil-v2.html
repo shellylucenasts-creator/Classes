@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Welcome to Brazil · Beyond the Meeting · Class 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#fffaf3;--cream2:#f4e9e2;--brown:#572c1c;--ink:#28211d;--yellow:#ffbd59;--soft:#fff0cf;--green:#567451;--red:#a44c3d}
+    *{box-sizing:border-box}body{margin:0;height:100dvh;display:flex;flex-direction:column;background:var(--cream2);color:var(--brown);font-family:Nunito,sans-serif}header{height:54px;padding:10px 20px;background:var(--brown);color:white;display:flex;align-items:center;justify-content:space-between}header strong{font-family:Fredoka,sans-serif;letter-spacing:.03em}main{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden}#frame{position:relative;flex-shrink:0;box-shadow:0 10px 38px #572c1c26}#canvas{position:relative;width:1280px;height:720px;transform-origin:top left;background:var(--cream)}.slide{position:absolute;inset:0;padding:32px 64px 42px;background:var(--cream);overflow:hidden}.slide[hidden]{display:none}.eyebrow{height:28px;padding:3px 10px;background:var(--yellow);font-size:16px;font-weight:800;letter-spacing:.06em}.title{margin:18px 0 8px;font:700 58px/1.03 Fredoka,sans-serif}.subtitle{font-size:22px;line-height:1.35;color:var(--ink)}.counter{position:absolute;right:62px;bottom:22px;font-size:15px;font-weight:700}.photo{object-fit:cover;border-radius:18px}.panel{background:white;border:2px solid #eadaca;border-radius:18px;padding:20px}.quote{font:600 29px/1.35 Fredoka,sans-serif}.row{display:flex;gap:26px}.col{flex:1}.chunk{display:block;margin:10px 0;padding:12px 16px;background:white;border-left:8px solid var(--yellow);border-radius:8px;font-size:23px}.small{font-size:18px}.lead{font-size:28px;line-height:1.35}.mail{margin-top:24px;padding:24px 30px;background:white;border:2px solid #eadaca;border-radius:16px;font-size:22px;line-height:1.4}.mail-head{margin:-24px -30px 20px;padding:14px 30px;background:var(--yellow);font-weight:800}.choice{width:100%;margin:8px 0;padding:13px 16px;border:2px solid #dcc8b6;border-radius:12px;background:white;color:var(--brown);font:700 20px Nunito,sans-serif;text-align:left;cursor:pointer}.choice:hover{border-color:var(--yellow)}.choice.selected{border-color:var(--brown);background:var(--soft)}.choice.good{border-color:var(--green);background:#edf6eb}.choice.bad{border-color:var(--red);background:#fae9e5}.check{padding:10px 18px;border:0;border-radius:10px;background:var(--brown);color:white;font:800 18px Nunito,sans-serif;cursor:pointer}.feedback{min-height:30px;margin-top:9px;font-weight:800;font-size:18px}.sort-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.sort-item{padding:14px;background:white;border:2px solid #dcc8b6;border-radius:12px;font-size:19px;cursor:pointer}.sort-item[data-cat="social"]{border-left:10px solid #7595b1}.sort-item[data-cat="transition"]{border-left:10px solid var(--yellow)}.sort-item[data-cat="business"]{border-left:10px solid #7f6c5b}.sort-item.revealed::after{content:" · " attr(data-label);font-weight:800}.order-list{display:flex;flex-direction:column;gap:9px}.order-item{display:flex;align-items:center;gap:12px;padding:11px 14px;background:white;border:2px solid #dcc8b6;border-radius:12px;font-size:19px}.order-item span{flex:1}.move{padding:6px 10px;border:0;border-radius:8px;background:var(--soft);font-weight:900;cursor:pointer}.info-card{position:relative;min-height:270px}.reveal{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:var(--brown);color:white;border:0;border-radius:16px;font:700 28px Fredoka,sans-serif;cursor:pointer}.reveal.hidden{display:none}.textbox{width:100%;min-height:90px;padding:12px;border:2px solid #dcc8b6;border-radius:12px;background:white;font:600 20px Nunito,sans-serif;resize:none}.mission{font-size:22px;line-height:1.45}.badge{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--yellow);font-weight:800}.closing{display:flex;align-items:center;justify-content:center;text-align:center}.closing h1{font:700 66px Fredoka,sans-serif}.cover{padding:0}.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,250,243,.98) 0%,rgba(255,250,243,.92) 37%,rgba(255,250,243,.35) 50%,rgba(255,250,243,0) 63%)}.cover-copy{position:absolute;z-index:2;left:64px;top:62px;width:540px}.cover .title{font-size:72px;margin-top:110px}.cover .subtitle{font-size:23px}.recovery{padding:0;background:var(--cream)}.recovery img{display:block;width:100%;height:100%;object-fit:cover}nav{padding:10px 16px max(10px,env(safe-area-inset-bottom));display:flex;justify-content:center;align-items:center;gap:12px;background:var(--cream);border-top:1px solid #e9ddd0}nav button,select{font:800 15px Nunito,sans-serif;color:var(--brown);border:1px solid #dcc8b6;background:white;border-radius:10px;padding:9px 16px;cursor:pointer}#next{background:var(--yellow);border-color:var(--yellow)}#fs{padding:7px 11px;color:white;background:transparent;border:1px solid #ffffff80;border-radius:8px;cursor:pointer}button:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}button:disabled{opacity:.35;cursor:default}@media(max-width:600px){header{height:44px;font-size:11px;padding:7px 10px}nav{gap:6px}nav button,select{font-size:12px;padding:7px 9px}select{max-width:150px}}
+  </style>
+</head>
+<body>
+<header><strong>BEYOND THE MEETING · CLASS 1 · B1</strong><button id="fs">Full screen</button></header>
+<main><div id="frame"><div id="canvas">
+
+  <section class="slide cover" aria-label="Slide 1">
+    <img src="assets/class1-welcome-v2.png" alt="Two Brazilian managers welcoming an international client at a shipping company">
+    <div class="cover-copy">
+      <div class="eyebrow">BEYOND THE MEETING · CLASS 1 · B1</div>
+      <h1 class="title">Welcome to Brazil</h1>
+      <p class="subtitle">I can welcome an international client, make them comfortable and transition naturally into a meeting.</p>
+    </div>
+  </section>
+
+  <section class="slide recovery" aria-label="Slide 2" hidden>
+    <img src="assets/class1-trip-recovery-v2.png" alt="A couple arriving at an airport, exploring a city and having dinner">
+  </section>
+
+  <section class="slide" aria-label="Slide 3" hidden>
+    <div class="eyebrow">CONTEXT</div><h2 class="title">A client is arriving on Monday</h2>
+    <div class="mail">
+      <div class="mail-head">From: International Accounts · Subject: Client visit</div>
+      Morgan Lee, Regional Director, will spend five days with our team in Brazil.<br><br>
+      Vinícius will introduce the operational side of the service. Fernanda will present the financial process.<br><br>
+      You will also accompany Morgan during lunch and dinner. Please make sure the visit feels professional and welcoming from the moment Morgan arrives.
+    </div><div class="counter">03 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 4" hidden>
+    <div class="eyebrow">LANGUAGE FOR THE GOAL</div><h2 class="title">The first five minutes</h2>
+    <div class="row">
+      <div class="col panel"><span class="badge">WELCOME</span>
+        <span class="chunk">How was your trip?</span><span class="chunk">Have you been to Brazil before?</span><span class="chunk">How are you finding the city so far?</span>
+      </div>
+      <div class="col panel"><span class="badge">MAKE IT EASY</span>
+        <span class="chunk">Would you like some coffee before we start?</span><span class="chunk">Let me know if you need anything.</span><span class="chunk">Whenever you’re ready, we can begin.</span>
+      </div>
+      <div class="col panel"><span class="badge">START THE MEETING</span>
+        <span class="chunk">Shall we go over today’s agenda?</span><span class="chunk">We can start with Operations.</span><span class="chunk">Fernanda will then take you through Finance.</span>
+      </div>
+    </div><div class="counter">04 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 5" hidden>
+    <div class="eyebrow">ANALYSIS</div><h2 class="title">What job does each line do?</h2>
+    <p class="subtitle">Read the lines. Decide whether each one builds rapport, makes a transition or starts business. Then reveal the functions.</p>
+    <div class="sort-grid" id="sortGrid">
+      <div class="sort-item" data-cat="social" data-label="BUILDS RAPPORT">Have you had a chance to see the city?</div>
+      <div class="sort-item" data-cat="transition" data-label="MAKES A TRANSITION">Whenever you’re ready, we can begin.</div>
+      <div class="sort-item" data-cat="business" data-label="STARTS BUSINESS">We can start with the service schedule.</div>
+      <div class="sort-item" data-cat="social" data-label="BUILDS RAPPORT">How was your flight?</div>
+      <div class="sort-item" data-cat="transition" data-label="MAKES A TRANSITION">Shall we go over today’s agenda?</div>
+      <div class="sort-item" data-cat="business" data-label="STARTS BUSINESS">Fernanda will take you through the payment process.</div>
+    </div>
+    <button class="check" style="margin-top:16px" onclick="document.querySelectorAll('#sortGrid .sort-item').forEach(x=>x.classList.toggle('revealed'))">Reveal functions</button>
+    <div class="counter">05 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 6" hidden>
+    <div class="eyebrow">CONTROLLED PRACTICE 1 · RECOGNIZE</div><h2 class="title">Which response feels welcoming?</h2>
+    <div class="row">
+      <div class="col panel quiz" data-answer="1"><p class="lead"><strong>Morgan:</strong> It was a long flight, but everything went smoothly.</p><button class="choice" data-value="0">Good. The meeting room is upstairs.</button><button class="choice" data-value="1">I’m glad to hear that. Would you like some coffee before we start?</button><div class="feedback"></div></div>
+      <div class="col panel quiz" data-answer="0"><p class="lead"><strong>Morgan:</strong> This is my first time in Brazil.</p><button class="choice" data-value="0">Welcome! How are you finding the city so far?</button><button class="choice" data-value="1">Okay. We have a full agenda today.</button><div class="feedback"></div></div>
+    </div>
+    <button class="check" style="margin-top:18px" onclick="checkQuizzes(this.closest('.slide'))">Check</button><div class="counter">06 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 7" hidden>
+    <div class="eyebrow">CONTROLLED PRACTICE 2 · MANIPULATE</div><h2 class="title">Build the welcome</h2>
+    <p class="subtitle">Put the conversation in a natural order.</p>
+    <div class="order-list" id="orderList">
+      <div class="order-item" data-id="3"><span><strong>Host:</strong> Whenever you’re ready, we can go over today’s agenda.</span><button class="move" onclick="moveItem(this,-1)">↑</button><button class="move" onclick="moveItem(this,1)">↓</button></div>
+      <div class="order-item" data-id="1"><span><strong>Host:</strong> Welcome, Morgan. It’s great to finally meet you in person.</span><button class="move" onclick="moveItem(this,-1)">↑</button><button class="move" onclick="moveItem(this,1)">↓</button></div>
+      <div class="order-item" data-id="4"><span><strong>Morgan:</strong> Perfect. I’m ready.</span><button class="move" onclick="moveItem(this,-1)">↑</button><button class="move" onclick="moveItem(this,1)">↓</button></div>
+      <div class="order-item" data-id="2"><span><strong>Host:</strong> How was your trip?</span><button class="move" onclick="moveItem(this,-1)">↑</button><button class="move" onclick="moveItem(this,1)">↓</button></div>
+    </div>
+    <button class="check" style="margin-top:18px" onclick="checkOrder()">Check order</button><span class="feedback" id="orderFeedback" style="margin-left:16px"></span><div class="counter">07 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 8" hidden>
+    <div class="eyebrow">CONTROLLED PRACTICE 3 · DECIDE</div><h2 class="title">Stay social or start business?</h2>
+    <div class="row">
+      <div class="col panel quiz" data-answer="0"><p class="lead">Morgan looks tired and asks where the restroom is.</p><button class="choice" data-value="0">Help first and offer a short break.</button><button class="choice" data-value="1">Begin the presentation to save time.</button></div>
+      <div class="col panel quiz" data-answer="1"><p class="lead">Morgan has coffee, opens a notebook and asks about the agenda.</p><button class="choice" data-value="0">Ask more questions about the flight.</button><button class="choice" data-value="1">Confirm the agenda and begin.</button></div>
+      <div class="col panel quiz" data-answer="0"><p class="lead">Morgan mentions that the company has worked with Brazilian ports before.</p><button class="choice" data-value="0">Acknowledge the experience and ask one follow-up question.</button><button class="choice" data-value="1">Change the subject immediately.</button></div>
+    </div>
+    <button class="check" style="margin-top:18px" onclick="checkQuizzes(this.closest('.slide'))">Check</button><div class="counter">08 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 9" hidden>
+    <div class="eyebrow">FREE PRACTICE · PREPARATION</div><h2 class="title">Your private information</h2>
+    <p class="subtitle">Read only your card. Do not show it to your partner.</p>
+    <div class="row">
+      <div class="col panel info-card"><h3 style="font:700 32px Fredoka;margin:0 0 16px">Vinícius · Operations</h3><p class="mission">Morgan wants to visit the vessel before the meeting. The port has not confirmed access yet. You can offer a short safety briefing while the team checks permission.</p><button class="reveal" onclick="this.classList.add('hidden')">Reveal Vinícius’s card</button></div>
+      <div class="col panel info-card"><h3 style="font:700 32px Fredoka;margin:0 0 16px">Fernanda · Finance</h3><p class="mission">Morgan sent financial questions before travelling. You have prepared the figures, but the full payment report will only be ready after lunch.</p><button class="reveal" onclick="this.classList.add('hidden')">Reveal Fernanda’s card</button></div>
+    </div><div class="counter">09 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 10" hidden>
+    <div class="eyebrow">FREE PRACTICE</div><h2 class="title">Morgan has arrived</h2>
+    <div class="row">
+      <img class="photo" src="https://shellylucenasts-creator.github.io/Classes/beyond-the-meeting/assets/class1-meeting.jpg?v=2" alt="Managers preparing for a client meeting" style="width:410px;height:420px">
+      <div class="col panel mission"><span class="badge">YOUR MISSION</span><p>Welcome Morgan and help the client feel comfortable.</p><p>Discover whether this is Morgan’s first visit to Brazil.</p><p>Respond to the request about the vessel visit.</p><p>Explain when the financial report will be available.</p><p>Move naturally into the meeting.</p><p><strong>Finish with:</strong> a clear first step for the visit.</p></div>
+    </div><div class="counter">10 / 12</div>
+  </section>
+
+  <section class="slide" aria-label="Slide 11" hidden>
+    <div class="eyebrow">RECAP</div><h2 class="title">The arrival in four moments</h2>
+    <div class="row">
+      <div class="col"><p class="lead"><strong>1. Welcome</strong></p><textarea class="textbox" placeholder="Write one line you used."></textarea><p class="lead"><strong>2. Build rapport</strong></p><textarea class="textbox" placeholder="Write one question you asked."></textarea></div>
+      <div class="col"><p class="lead"><strong>3. Make it easy</strong></p><textarea class="textbox" placeholder="Write one offer you made."></textarea><p class="lead"><strong>4. Start business</strong></p><textarea class="textbox" placeholder="Write your transition into the meeting."></textarea></div>
+    </div><div class="counter">11 / 12</div>
+  </section>
+
+  <section class="slide closing" aria-label="Slide 12" hidden><h1>I’m glad to have you here</h1></section>
+
+</div></div></main>
+<nav aria-label="Slide navigation"><button id="prev">Previous</button><select id="jump"></select><button id="next">Next</button><span id="status" aria-live="polite"></span></nav>
+<script>
+const slides=[...document.querySelectorAll('.slide')];const titles=['Welcome to Brazil','Recovery','A client is arriving','The first five minutes','Functions','Recognize','Build the welcome','Decide','Private information','Morgan has arrived','Recap','Closing'];let current=0;const jump=document.getElementById('jump'),prev=document.getElementById('prev'),next=document.getElementById('next');titles.forEach((t,i)=>jump.add(new Option(`${i+1} · ${t}`,i)));function show(i){current=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=>s.hidden=j!==current);prev.disabled=current===0;next.disabled=current===slides.length-1;jump.value=current;document.getElementById('status').textContent=`${current+1} / ${slides.length}`;}prev.onclick=()=>show(current-1);next.onclick=()=>show(current+1);jump.onchange=()=>show(+jump.value);document.addEventListener('keydown',e=>{if(['TEXTAREA','SELECT','INPUT'].includes(e.target.tagName))return;if(['ArrowRight','PageDown'].includes(e.key)){e.preventDefault();show(current+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}});document.getElementById('fs').onclick=async()=>{try{document.fullscreenElement?await document.exitFullscreen():await document.documentElement.requestFullscreen()}catch(e){}};function fit(){const main=document.querySelector('main'),scale=Math.min(main.clientWidth/1280,main.clientHeight/720);document.getElementById('canvas').style.transform=`scale(${scale})`;Object.assign(document.getElementById('frame').style,{width:`${1280*scale}px`,height:`${720*scale}px`});}window.addEventListener('resize',fit);document.addEventListener('fullscreenchange',fit);new ResizeObserver(fit).observe(document.querySelector('main'));
+document.querySelectorAll('.choice').forEach(b=>b.onclick=()=>{b.parentElement.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected','good','bad'));b.classList.add('selected')});function checkQuizzes(slide){slide.querySelectorAll('.quiz').forEach(q=>{const chosen=q.querySelector('.choice.selected'),correct=q.dataset.answer;if(!chosen)return;chosen.classList.add(chosen.dataset.value===correct?'good':'bad');const good=q.querySelector(`.choice[data-value="${correct}"]`);if(chosen!==good)good.classList.add('good');const f=q.querySelector('.feedback');if(f)f.textContent=chosen.dataset.value===correct?'Good choice.':'Compare the two responses.'})}function moveItem(btn,dir){const item=btn.closest('.order-item'),list=item.parentElement;if(dir<0&&item.previousElementSibling)list.insertBefore(item,item.previousElementSibling);if(dir>0&&item.nextElementSibling)list.insertBefore(item.nextElementSibling,item)}function checkOrder(){const ids=[...document.querySelectorAll('#orderList .order-item')].map(x=>x.dataset.id).join('');document.getElementById('orderFeedback').textContent=ids==='1234'?'Natural and clear.':'Think: welcome, rapport, transition, response.'}show(0);fit();
+</script>
+</body>
+</html>
